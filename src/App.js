@@ -37,7 +37,7 @@ const App = () => {
             <div className="container">
                 {movies.length > 0 ?(
                      movies.map((movie)=>(
-                        <Movie movie={movie} />
+                        <Movie movie={movie} key={movie.imdbID} />
                     ))
                 ):(
                     <div className="empty">
